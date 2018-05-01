@@ -22,3 +22,5 @@ At this time, I implemented _webpack_ to build your JavaScript. Just create your
 To build the **main.js** just run `npm run build-dev` and the **main.js** is created in the **dist**-folder.
 
 For linting the JavaScript, I added _eslint_. You can lint any *.js-file in the **src**-folder by running `npm run lint -s`.
+
+To get rid off the **main.js** created by _webpack_, you can run `npm run clean`. Since it's a better practise to delete it every time you build your JavaScript again, it runs the moment you right before the **main.js** is built.
