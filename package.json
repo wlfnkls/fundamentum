@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "./node_modules/.bin/eslint src/**.js",
     "build-dev": "webpack --mode development",
     "build-prod": "webpack --mode production"
   },
