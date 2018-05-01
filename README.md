@@ -7,7 +7,7 @@ It comes with _jquery_, _eslint_ and _webpack_ for now.
 
 ----
 
-## Requirement
+## Requirements
 
 In order to run this repository you need _node.js_ and the packet manager _npm_ which comes with _node.js_. <br />
 To check if you are already ready to go, just run `node --v` and `npm --v`. In case you need it, head over to [node.js](https://nodejs.org/en/) and follow the instructions relating to your OS.
