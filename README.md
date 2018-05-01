@@ -7,7 +7,7 @@ It comes with _jquery_, _eslint_ and _webpack_ for now.
 
 ----
 
-## Hot to use
+## How to use
 
 After cloning this repository via `git clone https://github.com/wlfnkls/fundamentum.git` you have to install the dependencies via `npm install`.
 
