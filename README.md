@@ -18,9 +18,10 @@ To check if you are good to go, just run `node --v` and `npm --v`. In case you n
 
 After cloning this repository via `git clone https://github.com/wlfnkls/fundamentum.git`, you have to install the dependencies via `npm install`.
 
+For linting the JavaScript, I added _eslint_. You can lint any *.js-file in the **src**-folder by running `npm run lint -s`. <br />
+You can start a watch-task for eslint by running `npm run watch:lint`. This task watches any *.js-file in the **src**-folder.
+
 At this time, I implemented _webpack_ to build your JavaScript. Just create your *.js-file in the **src**-folder and import it in the **index.js**. <br />
 To build the **main.js** just run `npm run build-dev` and the **main.js** is created in the **dist**-folder.
-
-For linting the JavaScript, I added _eslint_. You can lint any *.js-file in the **src**-folder by running `npm run lint -s`.
 
 To get rid off the **main.js** created by _webpack_, you can run `npm run clean`. Since it's a better practise to delete it every time you build your JavaScript again, it runs the moment right before the **main.js** is built.
