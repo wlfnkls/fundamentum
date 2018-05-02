@@ -4,7 +4,7 @@ This repository is a **basic enviroment** setup for an easy development start. <
 It comes with _jquery_, _eslint_, _node-sass_ and _webpack_ for now.
 
 :warning: THIS IS UNDER CONSTRUCTION <br />
-I'm at the very beginning with this repository and features are added nearly every day.
+_I'm at the very beginning with this repository and features are added nearly every day._
 
 ----
 
