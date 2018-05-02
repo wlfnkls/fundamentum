@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "del-cli dist/main.js",
-    "lint": "./node_modules/.bin/eslint src/**.js",
+    "lint": "eslint src/**.js",
     "watch:lint": "esw --watch src/**.js",
     "watch:scss": "onchange \"src/scss/*.scss\" -- npm run build:css",
     "build:css": "node-sass src/scss -o dist/css",
