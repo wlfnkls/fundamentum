@@ -1,3 +1,8 @@
+/* ************************************************* */
+/*    THIS FILE IS FOR DEMONSTRATION PUPROSE ONLY    */
+/*  YOU CAN DELETE IT AFTER TEST-RUN WAS SUCCESSFUL  */
+/* ************************************************* */
+
 import $ from 'jquery';
 
 let $container = $('.container');
