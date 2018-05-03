@@ -9,6 +9,7 @@
     "lint": "eslint src/**.js",
     "watch:lint": "esw --watch src/**.js",
     "watch:scss": "onchange \"src/scss/*.scss\" -- npm run build:css",
+    "watch:js": "webpack --watch --mode development",
     "build:css": "node-sass --output-style expanded src/scss -o dist/css",
     "build:dev": "npm run clean && webpack --mode development",
     "build:prod": "webpack --mode production",
