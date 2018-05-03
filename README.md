@@ -27,7 +27,7 @@ The minified version is already linked in the index.html which you'll find in th
 > For now create a *.scss-file in the **src/scss**-folder and _then_ start the watch-task(s), please.
 
 At this time, I implemented _webpack_ to build your JavaScript. Just create your *.js-file in the **src**-folder and import it in the **index.js**. <br />
-`index.js:`
+
 ``` javascript
 import test from './test';
 test();
