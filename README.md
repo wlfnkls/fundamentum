@@ -27,6 +27,12 @@ The minified version is already linked in the index.html which you'll find in th
 > For now create a *.scss-file in the **src/scss**-folder and _then_ start the watch-task(s), please.
 
 At this time, I implemented _webpack_ to build your JavaScript. Just create your *.js-file in the **src**-folder and import it in the **index.js**. <br />
+`index.js:`
+``` javascript
+import test from './test';
+test();
+```
+
 To build the **main.js** just run `npm run build-dev` and the **main.js** is created in the **dist**-folder. <br /> 
 You got it... there is another watch-task! Run `npm run watch:js` and _webpack_ is triggered everytime you change your JS.
 
