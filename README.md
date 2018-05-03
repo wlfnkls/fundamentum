@@ -23,9 +23,10 @@ You can start a watch-task for eslint by running `npm run watch:lint`. This task
 This repository contains _node-sass_ to build CSS from SASS/SCSS-files. The command `npm run build:css` compiles your *.scss-files in the **src/scss**-folder into CSS and exports those to the **dist/css**-folder. <br />
 There is a watch-task for this, too. You can start it with `npm run watch:scss`.
 
-You can run both watch-tasks parallel by running `npm run start-dev`.
-
 At this time, I implemented _webpack_ to build your JavaScript. Just create your *.js-file in the **src**-folder and import it in the **index.js**. <br />
-To build the **main.js** just run `npm run build-dev` and the **main.js** is created in the **dist**-folder.
+To build the **main.js** just run `npm run build-dev` and the **main.js** is created in the **dist**-folder. <br /> 
+You got it... there is another watch-task! Run `npm run watch:js` and _webpack_ is triggered everytime you change your JS.
+
+You can run all three watch-tasks parallel by running `npm run start-dev`.
 
 To get rid off the **main.js** created by _webpack_, you can run `npm run clean`. Since it's a better practise to delete it every time you build your JavaScript again, it runs the moment right before the **main.js** is built.
