@@ -1,7 +1,7 @@
 # FUNDAMENTUM
 
 This repository is a **basic enviroment** setup for an easy development start. <br />
-It comes with _jquery_, _eslint_, _node-sass_ and _webpack_ for now.
+It comes with _webpack_, _gulp_, _eslint_, _gulp-sass_ and _jquery_ for now.
 
 :warning: THIS IS UNDER CONSTRUCTION <br />
 _I'm at the very beginning with this repository and features are added nearly every day._
@@ -20,8 +20,11 @@ After cloning this repository via `git clone https://github.com/wlfnkls/fundamen
 For linting the JavaScript, I added _eslint_. You can lint any *.js-file in the **src**-folder by running `npm run lint -s`. <br />
 You can start a watch-task for eslint by running `npm run watch:lint`. This task watches any *.js-file in the **src**-folder.
 
-This repository contains _node-sass_ to build CSS from SASS/SCSS-files. The command `npm run build:css` compiles your *.scss-files in the **src/scss**-folder into CSS and exports those to the **dist/css**-folder. <br />
-There is a watch-task for this, too. You can start it with `npm run watch:scss`.
+To build CSS from *.scss-files, FUNDAMENTUM comes with a task that concats your *.scss-files and exports a minified version to your **dist/css**-folder. Just run `npm run build:css`.
+There is a watch-task for this, which you can start by running `npm run watch:scss`. <br />
+The minified version is already linked in the index.html which you'll find in the **dist**-folder. <br />
+**HINT:** This watch-task has some problems in case you start it while the **src/scss**-folder is empty! <br />
+For now create a *.scss-file in the **src/scss**-folder and _then_ start the watch-task(s), please.
 
 At this time, I implemented _webpack_ to build your JavaScript. Just create your *.js-file in the **src**-folder and import it in the **index.js**. <br />
 To build the **main.js** just run `npm run build-dev` and the **main.js** is created in the **dist**-folder. <br /> 
