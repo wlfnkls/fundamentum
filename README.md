@@ -20,11 +20,11 @@ After cloning this repository via `git clone https://github.com/wlfnkls/fundamen
 For linting the JavaScript, I added _eslint_. You can lint any *.js-file in the **src**-folder by running `npm run lint -s`. <br />
 You can start a watch-task for eslint by running `npm run watch:lint`. This task watches any *.js-file in the **src**-folder.
 
-To build CSS from *.scss-files, FUNDAMENTUM comes with a task that concats your *.scss-files and exports a minified version to your **dist/css**-folder. Just run `npm run build:css`.
+To build CSS from *.scss-files, **FUNDAMENTUM** comes with a task that concats your *.scss-files and exports a minified version to your **dist/css**-folder. Just run `npm run build:css`.
 There is a watch-task for this, which you can start by running `npm run watch:scss`. <br />
 The minified version is already linked in the index.html which you'll find in the **dist**-folder. <br />
-**HINT:** This watch-task has some problems in case you start it while the **src/scss**-folder is empty! <br />
-For now create a *.scss-file in the **src/scss**-folder and _then_ start the watch-task(s), please.
+> **HINT:** This watch-task has some problems in case you start it while the **src/scss**-folder is empty! <br />
+> For now create a *.scss-file in the **src/scss**-folder and _then_ start the watch-task(s), please.
 
 At this time, I implemented _webpack_ to build your JavaScript. Just create your *.js-file in the **src**-folder and import it in the **index.js**. <br />
 To build the **main.js** just run `npm run build-dev` and the **main.js** is created in the **dist**-folder. <br /> 
