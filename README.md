@@ -28,11 +28,13 @@ test();
 ```
 
 _Webpack_ also compiles CSS from your *.(s)css-files found in the **src**-folder. <br />
-You have to add the (S)CSS-source to your *.js-file and _webpack_ bundles a CSS-file (_styles.css_) which is exported to the **dist/css**-folder. I added the exported CSS to the **index.html**.
+You have to add the (S)CSS-source to your *.js-file and _webpack_ bundles a minified CSS-file (_styles.css_) which is exported to the **dist/css**-folder.
 
 ``` javascript
 import './*.css';
 ```
+
+I added the exported and minified CSS to the **index.html**.
 
 To build the **main.js** just run `npm run build-dev` and the **main.js** is created in the **dist**-folder. <br /> 
 You got it... there is another watch-task! Run `npm run watch:js` and _webpack_ is triggered everytime you change your JS.
