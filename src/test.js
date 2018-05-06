@@ -4,6 +4,7 @@
 /* ************************************************* */
 
 import $ from 'jquery';
+import './scss/test.scss';
 
 export default () => {
   let $container = $('.container');
