@@ -27,11 +27,11 @@ import test from './test';
 test();
 ```
 
-_Webpack_ also compiles CSS from your *.(s)css-files found in the **src**-folder. <br />
+_Webpack_ also compiles CSS from your *.(s)css-files found in the **src/scss**-folder. <br />
 You have to add the (S)CSS-source to your *.js-file and _webpack_ bundles a minified CSS-file (_styles.css_) which is exported to the **dist/css**-folder.
 
 ``` javascript
-import './*.css';
+import './scss/*.scss';
 ```
 
 I added the exported and minified CSS to the **index.html**.
