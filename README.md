@@ -20,12 +20,6 @@ After cloning this repository via `git clone https://github.com/wlfnkls/fundamen
 For linting the JavaScript, I added _eslint_. You can lint any *.js-file in the **src**-folder by running `npm run lint -s`. <br />
 You can start a watch-task for eslint by running `npm run watch:lint`. This task watches any *.js-file in the **src**-folder.
 
-To build CSS from *.scss-files, **FUNDAMENTUM** comes with a task that concats your *.scss-files and exports a minified version to your **dist/css**-folder. Just run `npm run build:css`.
-There is a watch-task for this, which you can start by running `npm run watch:scss`. <br />
-The minified version is already linked in the index.html which you'll find in the **dist**-folder. <br />
-> **HINT:** This watch-task has some problems in case you start it while the **src/scss**-folder is empty! <br />
-> For now create a *.scss-file in the **src/scss**-folder and _then_ start the watch-task(s), please.
-
 At this time, I implemented _webpack_ to build your JavaScript. Just create your *.js-file in the **src**-folder and import it in the **index.js**. <br />
 
 ``` javascript
@@ -33,9 +27,16 @@ import test from './test';
 test();
 ```
 
+_Webpack_ also compiles CSS from your *.(s)css-files found in the **src**-folder. <br />
+You have to add the (S)CSS-source to your *.js-file and _webpack_ bundles a CSS-file (_styles.css_) which is exported to the **dist/css**-folder. I added the exported CSS to the **index.html**.
+
+``` javascript
+import './*.css';
+```
+
 To build the **main.js** just run `npm run build-dev` and the **main.js** is created in the **dist**-folder. <br /> 
 You got it... there is another watch-task! Run `npm run watch:js` and _webpack_ is triggered everytime you change your JS.
 
-You can run all three watch-tasks parallel by running `npm run start-dev`.
+You can run all watch-tasks parallel by running `npm run start-dev`.
 
 To get rid off the **main.js** created by _webpack_, you can run `npm run clean`. Since it's a better practise to delete it every time you build your JavaScript again, it runs the moment right before the **main.js** is built.
