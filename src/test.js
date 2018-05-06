@@ -7,9 +7,10 @@ import $ from 'jquery';
 
 export default () => {
   let $container = $('.container');
-  let $headline = $('<h2 class=test-headline></h2>');
+  let $headline = $('<h2></h2>');
 
   $(function () {
+    $headline.addClass('test-headline');
     $headline.text('Welcome to Fundamentum!');
     $container.append($headline);
   });
