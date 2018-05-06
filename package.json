@@ -5,9 +5,9 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "del-cli dist/main.js",
-    "lint": "eslint src/**.js",
-    "watch:lint": "esw --watch src/**.js",
+    "clean": "del-cli dist/js/main.js",
+    "lint": "eslint src/js/**.js",
+    "watch:lint": "esw --watch src/js/**.js",
     "watch:js": "webpack --watch --mode development",
     "build:dev": "npm run clean && webpack --mode development",
     "build:prod": "webpack --mode production",
