@@ -16,7 +16,7 @@ To check if you are good to go, just run `node --v` and `npm --v`. In case you n
 
 After cloning this repository via `git clone https://github.com/wlfnkls/fundamentum.git`, you have to install the dependencies via `npm install`.
 
-To start developing, just run `npm run start`. Your *.js-files and *.scss-files will be watched and _webpack_ builds bundled files four you.
+To start developing, just run `npm run start`. Your *.js-files and *.scss-files will be watched and _webpack_ builds bundled files for you.
 
 For linting the JavaScript, I added _eslint_. You can lint any *.js-file in the **src/js**-folder by running `npm run lint -s`. <br />
 You can start a watch-task for eslint by running `npm run watch:lint`. This task watches any *.js-file in the **src/js**-folder.
@@ -28,8 +28,8 @@ import test from './test';
 test();
 ```
 
-_Webpack_ also compiles CSS from your *.(s)css-files found in the **src/scss**-folder. <br />
-You have to import the (S)CSS-source in your *.js-file and _webpack_ bundles a minified CSS-file (_styles.min.css_) which is exported to the **dist/css**-folder.
+_Webpack_ compiles CSS from your *.(s)css-files found in the **src/scss**-folder. <br />
+You have to import the (S)CSS-source in your *.js-file and _webpack_ bundles a minified CSS-file (_styles.min.css_) dependent on that JavaScript which is exported to the **dist/css**-folder.
 
 ``` javascript
 import './scss/*.scss';
