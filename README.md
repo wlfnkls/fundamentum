@@ -17,7 +17,7 @@ To check if you are good to go, just run `node --v` and `npm --v`. In case you n
 After cloning this repository, you have to install the dependencies via `npm install`.
 
 To start developing, just run `npm run start`. Your *.js-files and *.scss-files will be watched and _webpack_ builds bundled files for you. <br />
-When you open the **index.html**, which you can find in the **dist**-folder, you will see a read headline saying ''Welcome to Fundamentum!'.
+When you open the **index.html**, which you can find in the **dist**-folder, you will see a read headline saying ''Welcome to Fundamentum!', if everything went well so far.
 
 Running `npm run start` starts the following watch-tasks, which you can run separately, too (if you need it...).
 
